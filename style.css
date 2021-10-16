@@ -1,0 +1,188 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button{
+  background-color: #3882F6;
+  border-radius: 5px;
+  padding: 8px;
+  color: #e5e7eb;
+}
+/* ------------------------------------------------------------------------------------------------- */
+/* NAVBAR STYLES */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  background-color: #1F2937;
+  font-size: 18px;
+}
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+
+}
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+.logo{
+  color: #F9FAF8;
+  font-size: 24px;
+}
+/* HEADER STYLES */
+.header{
+  display: flex;
+  flex-direction: row;
+  background-color: #1F2937;
+  justify-content: space-evenly;
+  padding: 80px;
+}
+.heading-title{
+  max-width: 300px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.heading-title h1{
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+
+}
+.heading-title p{
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.hero img{
+  max-width: 50vw;
+  max-height: 25vh;
+}
+.heading-title p{
+  margin: 8px 0;
+}
+
+/* CONTENT */
+.content{
+  display: flex;
+  margin: 18px 0;
+  gap: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
+.quote{
+  display: grid;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 48px;
+  font-size: 18px;
+  background-color: #e5e7eb;
+  justify-content: center;
+}
+.quote-text{
+  max-width: 500px;
+  color: #1f2937;
+  font-style: italic;
+  font-size: 24px;
+}
+.attribute{
+  justify-self: flex-end;
+  color: #1f2937;
+  font-style: italic;
+  font-size: 24px;
+}
+/* CALL TO ACTION */
+.call-to-action{
+  display: flex;
+  justify-content: center;
+  color: #e5e7eb;
+}
+.call-title{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.call-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background-color: #3882F6;
+  padding: 32px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  margin: 25px;
+}
+/* FOOTER */
+.footer{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: #e5e7eb;
+  background-color:  #1f2937;
+  padding: 32px;
+}
