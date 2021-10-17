@@ -125,7 +125,7 @@ ul {
   display: flex;
   flex-direction: row;
   background-color: #1F2937;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 160px;
   padding: 38px;
   font-family: 'BioRhyme', serif;
