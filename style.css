@@ -88,6 +88,8 @@ body{
   flex-direction: column;
   justify-content: center;
   font-family: 'BioRhyme', serif;
+  position: relative;
+  min-height: 100vh;
 }
 .navbar{
   display: flex;
