@@ -312,19 +312,25 @@ ul {
   }
   .navbar{
     justify-content: center;
+    flex-direction: column;
   }
   .navbar .left{
     font-size: 5px;
   }
   .navbar .right{
     visibility: collapse;
+    visibility: hidden; 
   }
   .header {
     gap: 0px;
     text-align: center;
+    flex-direction: column;
   }
   .heading-title h1{
     font-size: 24px;
+  }
+  .header img{
+    visibility: collapse;
   }
   .heading-title p{
     font-size: 12px;
@@ -334,7 +340,14 @@ ul {
     margin: 16px 0;
   }
   .hero{
-    visibility:collapse;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+  .footer{
+    text-align: center;
   }
 }
 
