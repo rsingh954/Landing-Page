@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300&display=swap');
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,20 +50,27 @@ button{
   padding: 8px;
   color: #e5e7eb;
 }
+button:hover {
+  background-color: whitesmoke;
+  color: #1F2937;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* NAVBAR STYLES */
 body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'BioRhyme', serif;
 }
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 16px;
   background-color: #1F2937;
   font-size: 18px;
+  font-family: 'BioRhyme', serif;
 }
 ul {
   display: flex;
@@ -90,14 +99,19 @@ ul {
   display: flex;
   flex-direction: row;
   background-color: #1F2937;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 160px;
   padding: 38px;
+  font-family: 'BioRhyme', serif;
 }
 .heading-title{
   max-width: 300px;
   justify-content: start;
   flex-wrap: wrap;
+}
+.heading-title button{
+  background: radial-gradient(#3882F6, #1F2937);
+
 }
 .heading-title h1{
   font-size: 48px;
@@ -120,16 +134,22 @@ ul {
 /* CONTENT */
 .content{
   display: flex;
-  margin: 18px 0;
+  margin: 32px 0;
   gap: 18px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   }
+.content h6{
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 36px;
+}
 .cards-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 64px;
   justify-content: center;
 }
 .card {
@@ -141,7 +161,7 @@ ul {
   display: grid;
   flex-shrink: 0;
   flex-grow: 1;
-  padding: 48px;
+  padding: 64px;
   font-size: 18px;
   background-color: #e5e7eb;
   justify-content: center;
@@ -161,21 +181,32 @@ ul {
 /* CALL TO ACTION */
 .call-to-action{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   color: #e5e7eb;
 }
+.call-to-action button{
+  padding: 24px;
+  font-size: 16px;
+}
+.call-text p{
+  font-size: 16px;
+  margin-top: 1vh;
+  font-family: sans-serif;
+}
 .call-title{
-  font-size: 18px;
+  font-size: 32px;
   font-weight: bolder;
 }
 .call-wrapper{
   display: flex;
   flex-direction: row;
   gap: 24px;
-  background-color: #3882F6;
+  background-color: #1F2937;
   padding: 32px;
   border-radius: 10px;
   justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #1F2937;
   margin: 25px;
 }
 /* FOOTER */
@@ -186,14 +217,77 @@ ul {
   color: #e5e7eb;
   background-color:  #1f2937;
   padding: 32px;
+  
+}
+.footer a{
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
+/* CARDS */
+.a-box {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
 
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -15px 5px 5px -35px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
+  .navbar{
+    justify-content: center;
+  }
+  .navbar .left{
+    font-size: 5px;
+  }
+  .navbar .right{
+    visibility: collapse;
+  }
   .header {
     gap: 0px;
+    text-align: center;
   }
   .heading-title h1{
     font-size: 24px;
@@ -205,4 +299,8 @@ ul {
   .heading-title p{
     margin: 16px 0;
   }
+  .hero{
+    visibility:collapse;
+  }
 }
+
